@@ -3,6 +3,11 @@ import styled from "styled-components";
 export const CheckoutContainer = styled.main`
   display: grid;
   grid-template-columns: 640px 1fr;
+  margin: 0 auto;
+  @media (max-width: 1096px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const CheckoutInfo = styled.div`
@@ -36,10 +41,12 @@ export const CheckoutRadiobtn = styled.div`
   position: relative;
   display: block;
   text-align: center;
+
   label {
     display: block;
     margin: 0 auto;
     background: var(--gray-300);
+    border: 1px solid var(--gray-300);
     color: ${(props) => props.theme.colors.title};
     border-radius: 8px;
     padding: 0.75rem 1rem;
@@ -52,10 +59,11 @@ export const CheckoutRadiobtn = styled.div`
   input[type="radio"] {
     display: none;
     position: absolute;
-    width: 100%;
     appearance: none;
+
     &:checked + label {
-      background: var(--gray-400);
+      background-color: var(--purple-light);
+      border-color: var(--purple);
     }
   }
 `;
@@ -115,13 +123,3 @@ export const CheckoutPaymentForm = styled.div`
     }
   }
 `;
-
-export const CheckoutSidebar = styled.aside`
-  h2 {
-    color: ${(props) => props.theme.colors.title};
-  }
-`;
-
-export const CheckoutList = styled.div``;
-
-export const CheckoutValue = styled.div``;

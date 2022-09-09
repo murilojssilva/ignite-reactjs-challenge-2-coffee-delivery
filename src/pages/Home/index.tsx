@@ -10,7 +10,6 @@ interface IHomeProps {
 export function Home() {
   return (
     <HomeContainer>
-      <Header />
       <Intro />
       <Items />
     </HomeContainer>

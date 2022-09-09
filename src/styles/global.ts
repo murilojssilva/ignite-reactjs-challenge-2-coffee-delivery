@@ -40,12 +40,12 @@ export const GlobalStyle = createGlobalStyle`
 		-webkit-font-smoothing: antialiased;
     }
 
-    body, input, textarea, button, p, span {
+    body, input, textarea, p, span {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
     }
 
-    h1, h2, h3, h4, h5, h6, strong {
+    h1, h2, h3, h4, h5, h6, strong, button {
         font-family: 'Baloo 2', sans-serif;
         font-weight: 700;
     }

@@ -29,7 +29,7 @@ export const HeaderContent = styled.div`
       background-color: var(--purple-light);
       color: ${(props) => props.theme.colors.primary};
     }
-    button {
+    a {
       border: 0;
       border-radius: 8px;
       padding: 0.5rem;

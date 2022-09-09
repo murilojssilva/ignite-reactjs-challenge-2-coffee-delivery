@@ -7,12 +7,9 @@ import {
   CheckoutHeader,
   CheckoutInfo,
   CheckoutInfoContent,
-  CheckoutList,
   CheckoutPaymentForm,
   CheckoutRadiobtn,
-  CheckoutSidebar,
   CheckoutTitle,
-  CheckoutValue,
 } from "./styles";
 import {
   MapPinLine,
@@ -22,6 +19,7 @@ import {
   Money,
 } from "phosphor-react";
 import { Input } from "./components/Input";
+import { Sidebar } from "./components/Sidebar";
 
 export function Checkout() {
   return (
@@ -98,23 +96,7 @@ export function Checkout() {
           </CheckoutPaymentForm>
         </CheckoutInfoContent>
       </CheckoutInfo>
-      <CheckoutSidebar>
-        <h2>Cafés selecionados</h2>
-        <CheckoutList>
-          <CheckoutValue>
-            <p>Total de itens</p>
-            <p>R$ 00,00</p>
-          </CheckoutValue>
-          <CheckoutValue>
-            <p>Total de itens</p>
-            <p>R$ 00,00</p>
-          </CheckoutValue>
-          <CheckoutValue>
-            <strong>Total de itens</strong>
-            <strong>R$ 00,00</strong>
-          </CheckoutValue>
-        </CheckoutList>
-      </CheckoutSidebar>
+      <Sidebar />
     </CheckoutContainer>
   );
 }
