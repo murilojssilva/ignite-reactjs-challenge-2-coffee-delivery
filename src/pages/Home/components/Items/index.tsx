@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Item } from "./Item";
 import { ItemsContainer, ItemsContent } from "./styles";
 

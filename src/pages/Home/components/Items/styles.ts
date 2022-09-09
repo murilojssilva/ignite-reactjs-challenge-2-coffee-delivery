@@ -3,11 +3,13 @@ import styled from "styled-components";
 export const ItemsContainer = styled.section`
   max-width: 1440px;
   padding: 5rem;
+  margin: 0 auto;
 `;
 
 export const ItemsContent = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+
   gap: 1rem;
   padding: 3rem 0;
 

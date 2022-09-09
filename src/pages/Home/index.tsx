@@ -7,11 +7,10 @@ interface IHomeProps {
   quantity: number;
 }
 
-export function Home({ quantity }: IHomeProps) {
+export function Home() {
   return (
     <HomeContainer>
       <Header />
-
       <Intro />
       <Items />
     </HomeContainer>
